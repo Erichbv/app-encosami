@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="proyecto.com.proyecto.Main2Activity_agregar_proyecto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView24"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@+id/textView17"
+            android:text="Agregar Proyecto"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+            android:visibility="visible"
+            tools:layout_editor_absoluteX="59dp"
+            tools:layout_editor_absoluteY="16dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView25"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Empresa:" />
+
+            <EditText
+                android:id="@+id/et_empresa"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:inputType="textPersonName"
+                tools:layout_editor_absoluteX="136dp"
+                tools:layout_editor_absoluteY="128dp"
+                android:singleLine="true"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView18"
+                android:layout_width="113dp"
+                android:layout_height="wrap_content"
+                android:text="Proyecto:"
+                tools:layout_editor_absoluteX="67dp"
+                tools:layout_editor_absoluteY="128dp" />
+
+            <EditText
+                android:id="@+id/et_proyecto"
+                android:layout_width="268dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName"
+                tools:layout_editor_absoluteX="136dp"
+                tools:layout_editor_absoluteY="89dp"
+                android:singleLine="true" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <TextView
+                android:id="@+id/textView19"
+                android:layout_width="82dp"
+                android:layout_height="wrap_content"
+                android:text="Encargado"
+                tools:layout_editor_absoluteX="59dp"
+                tools:layout_editor_absoluteY="167dp" />
+
+            <Spinner
+                android:id="@+id/spn_encargado"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                tools:layout_editor_absoluteX="136dp"
+                tools:layout_editor_absoluteY="167dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView20"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:text="Tipo"
+                tools:layout_editor_absoluteX="67dp"
+                tools:layout_editor_absoluteY="196dp" />
+
+            <Spinner
+                android:id="@+id/spn_tipo"
+                android:layout_width="wrap_content"
+                android:layout_height="46dp"
+                tools:layout_editor_absoluteX="136dp"
+                tools:layout_editor_absoluteY="196dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView21"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Presupuesto"
+                tools:layout_editor_absoluteX="47dp"
+                tools:layout_editor_absoluteY="222dp"/>
+
+            <EditText
+                android:id="@+id/et_presupuesto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:inputType="numberDecimal"
+                tools:layout_editor_absoluteX="136dp"
+                tools:layout_editor_absoluteY="222dp"
+                android:singleLine="true"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView22"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/textView23"
+                android:layout_marginBottom="18dp"
+                android:layout_marginStart="29dp"
+                android:layout_toEndOf="@+id/textView21"
+                android:layout_weight="1"
+                android:text="Fecha de inicio"
+                tools:layout_editor_absoluteX="34dp"
+                tools:layout_editor_absoluteY="261dp"
+                android:singleLine="true"/>
+
+            <EditText
+                android:id="@+id/et_fecha_ini"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:inputType="date"
+                tools:layout_editor_absoluteX="136dp"
+                tools:layout_editor_absoluteY="253dp"
+                android:singleLine="true"
+                android:hint="DD.MM.YYYY"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView26"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Fecha Termino" />
+
+            <EditText
+                android:id="@+id/et_fecha_fin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:inputType="date"
+                tools:layout_editor_absoluteX="136dp"
+                tools:layout_editor_absoluteY="293dp"
+                android:hint="DD.MM.YYYY"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_agregar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="93dp"
+                android:layout_marginStart="11dp"
+                android:layout_toEndOf="@+id/textView23"
+                android:layout_weight="1"
+                android:text="Agregar"
+                tools:layout_editor_absoluteX="126dp"
+                tools:layout_editor_absoluteY="358dp" />
+
+            <Button
+                android:id="@+id/btn_mostrar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/btn_agregar"
+                android:layout_alignBottom="@+id/btn_agregar"
+                android:layout_marginStart="35dp"
+                android:layout_toEndOf="@+id/btn_agregar"
+                android:layout_weight="1"
+                android:text="Mostrar"
+                tools:layout_editor_absoluteX="235dp"
+                tools:layout_editor_absoluteY="358dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_regresa"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Regresar al Menu" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
