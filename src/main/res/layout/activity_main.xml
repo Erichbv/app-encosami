@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="proyecto.com.proyecto.MainActivity"
+    style="@android:style/TextAppearance.DeviceDefault.Widget.PopupMenu.Large">
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true"
+        tools:srcCompat="@drawable/captura"
+        android:layout_alignParentTop="true"
+        android:contentDescription="a"
+        android:src="@drawable/captura" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:hint="Usuario"
+        android:ems="10"
+        android:id="@+id/et_usuario"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:drawableLeft="@drawable/user"
+        android:singleLine="true"/>
+
+    <EditText
+        android:id="@+id/et_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Contraseña"
+        android:inputType="textPassword"
+        android:layout_below="@+id/et_usuario"
+        android:layout_alignStart="@+id/et_usuario"
+        android:layout_marginTop="17dp"
+        android:drawableLeft="@drawable/login"
+        android:singleLine="true"/>
+
+    <Button
+        android:id="@+id/btn_aceptar"
+        android:layout_width="125dp"
+        android:layout_height="wrap_content"
+        android:text="Aceptar"
+        android:background="@drawable/boton_redondo"
+        android:textColor="@color/blanco"
+        android:layout_below="@+id/et_password"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="33dp"
+        android:drawableLeft="@drawable/ingreso"/>
+
+</RelativeLayout>

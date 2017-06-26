@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="proyecto.com.proyecto.MainActivity_menu_admin">
+
+
+    <TextView
+        android:id="@+id/tv_imagen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/imagen_fondo"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true" />
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="100dp">
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="20dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/btn_addProy"
+                        style="@style/Widget.AppCompat.Button"
+                        android:layout_width="150dp"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_weight="1"
+                        android:background="@drawable/boton_redondo"
+                        android:drawableLeft="@android:drawable/ic_menu_add"
+                        android:padding="20dp"
+                        android:text="Agregar Proyecto"
+                        android:textColor="@color/blanco" />
+
+                    <Button
+                        android:id="@+id/btn_addTarea"
+                        android:layout_width="150dp"
+                        android:layout_height="match_parent"
+                        android:layout_alignEnd="@+id/btn_calcular"
+                        android:layout_below="@+id/btn_addProy"
+                        android:layout_marginLeft="10dp"
+                        android:background="@drawable/boton_redondo"
+                        android:drawableLeft="@android:drawable/ic_menu_add"
+                        android:text="Agregar Tareas"
+                        android:textColor="@color/blanco" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="20dp"
+                    android:orientation="horizontal"
+                    android:weightSum="1">
+
+                    <Button
+                        android:id="@+id/btn_listProy"
+                        android:layout_width="150dp"
+                        android:layout_height="match_parent"
+                        android:layout_alignEnd="@+id/btn_addTarea"
+                        android:layout_below="@+id/btn_addTarea"
+                        android:background="@drawable/boton_redondo"
+                        android:drawableLeft="@android:drawable/ic_input_get"
+                        android:padding="20dp"
+                        android:text="Listar Proyecto"
+                        android:textColor="@color/blanco" />
+
+
+                    <Button
+                        android:id="@+id/btn_listTareas"
+                        android:layout_width="150dp"
+                        android:layout_height="match_parent"
+                        android:layout_below="@+id/btn_listProy"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginLeft="10dp"
+                        android:background="@drawable/boton_redondo"
+                        android:drawableLeft="@android:drawable/ic_input_get"
+                        android:text="Listar Tareas"
+                        android:textColor="@color/blanco" />
+                </LinearLayout>
+            </LinearLayout>
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="20dp"
+                    android:orientation="horizontal"
+                    android:weightSum="1">
+
+                    <Button
+                        android:id="@+id/btn_calcular"
+                        android:layout_width="150dp"
+                        android:layout_height="match_parent"
+                        android:layout_below="@+id/btn_listTareas"
+                        android:layout_centerHorizontal="true"
+                        android:layout_weight="0.11"
+                        android:background="@drawable/boton_redondo"
+                        android:drawableLeft="@android:drawable/ic_menu_send"
+                        android:text="Calcular CPI-SPI"
+                        android:textColor="@color/blanco" />
+
+
+                    <Button
+                        android:id="@+id/btn_cerrar"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignEnd="@+id/btn_listTareas"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="1.70"
+                        android:background="@drawable/boton_redondo"
+                        android:drawableLeft="@drawable/cerrar_sesion"
+                        android:padding="20dp"
+                        android:text="Cerrar Sesion"
+                        android:textColor="@color/blanco" />
+                </LinearLayout>
+            </LinearLayout>
+
+        </TableRow>
+
+    </TableLayout>
+
+    <Button
+        android:layout_width="175dp"
+        android:layout_height="wrap_content"
+        android:text="Crear usuario"
+        android:id="@+id/btnUser"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_centerHorizontal="true"
+        android:layout_weight="1"
+        android:background="@drawable/boton_redondo"
+        android:drawableLeft="@drawable/user"
+        android:textColor="@color/blanco"/>
+
+</RelativeLayout>

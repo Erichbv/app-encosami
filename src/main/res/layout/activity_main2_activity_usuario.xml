@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="proyecto.com.proyecto.Main2ActivityUsuario">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Proyecto ABC INFORMES"
+        android:id="@+id/textView"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tareas"
+        android:id="@+id/textView3"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="24dp"
+        android:layout_toStartOf="@+id/textView"
+        android:layout_below="@+id/textView" />
+
+    <EditText
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:inputType="date"
+        android:ems="10"
+        android:id="@+id/editText3"
+        android:layout_below="@+id/textView"
+        android:hint="DD.MM.YYYY"
+        android:layout_toEndOf="@+id/textView3"
+        android:drawableRight="@drawable/calendario" />
+
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/listView3"
+        android:layout_below="@+id/textView3"
+        android:layout_alignParentStart="true"
+        android:layout_above="@+id/btnObInf" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="Obtener Informe"
+        android:id="@+id/btnObInf"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:background="@drawable/boton_redondo"
+        android:textColor="@color/blanco" />
+
+    <Button
+        android:id="@+id/btnCerrar"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="Cerrar Sesion"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:background="@drawable/boton_redondo"
+        android:textColor="@color/blanco" />
+
+</RelativeLayout>
